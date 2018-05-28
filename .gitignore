@@ -1,0 +1,27 @@
+# build output
+dist
+.output
+.out
+.next
+lib
+build
+
+# dependencies
+node_modules
+yarn*
+npm-debug*
+
+# logs
+*.log
+
+# coverage
+.nyc_output
+coverage
+
+# test output
+test/**/out
+.DS_Store
+.csslintrc
+
+#editors
+.idea

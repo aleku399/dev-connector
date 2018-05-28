@@ -1,0 +1,11 @@
+{
+    "editor.parameterHints": true,
+    "editor.wordBasedSuggestions": true,
+    "editor.quickSuggestionsDelay": 10,
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    }
+}
