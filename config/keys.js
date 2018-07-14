@@ -1,3 +1,4 @@
 module.exports = {
-    mongoURI: 'mongodb://ssentongo:ssentongo@ds235850.mlab.com:35850/sent'
+    mongoURI: 'mongodb://ssentongo:ssentongo@ds235850.mlab.com:35850/sent',
+    secretOrKey: 'secret'
 };

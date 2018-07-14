@@ -1,14 +1,15 @@
-{ 
-    "extends": "standard",
-    "installedESLint": true,
-    "env" :{
-        "node" : true
-      },
-      "plugins": [
-        "standard"
-    ],
+{
+    "root": true,
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "extends": "eslint:recommended",
     "rules": {
-        "no-multiple-empty-lines": 0,
-        "semi" : 0
-     } 
+      "no-console": [0],
+      "semi": [2, "always"]
+    },
+    "parserOptions": {
+        "ecmaVersion": 6
+    }
 }
