@@ -4,12 +4,12 @@ const isEmpty = require('./is-empty');
 module.exports = function validateEducationInput(data) {
     let errors = {};
 
-    data.school = !isEmpty(data.title) ? data.shool : '';
-    data.degree = !isEmpty(data.company) ? data.degree : '';
-    data.fieldofstudy = !isEmpty(data.location) ? data.fieldofstudy : '';
-    data.from = !isEmpty(data.password2) ? data.from : '';
+    data.school = !isEmpty(data.school) ? data.school : '';
+    data.degree = !isEmpty(data.degree) ? data.degree : '';
+    data.fieldofstudy = !isEmpty(data.fieldofstudy) ? data.fieldofstudy : '';
+    data.from = !isEmpty(data.from) ? data.from : '';
    
-    if (Validator.isEmpty(data.title)) {
+    if (Validator.isEmpty(data.school)) {
         errors.school = 'School field is required';
     }
 
@@ -17,7 +17,7 @@ module.exports = function validateEducationInput(data) {
         errors.degree = 'Degree field is required';
     }
 
-    if (!Validator.isEmail(data.fieldofstudy)) {
+    if (Validator.isEmail(data.fieldofstudy)) {
         errors.fieldofstudy = 'Field of study is invalid';
     }
 
